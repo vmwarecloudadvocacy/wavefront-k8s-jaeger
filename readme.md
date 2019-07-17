@@ -87,6 +87,6 @@ Edit **YOUR CLUSTER NAME** to uniquely identify your Kubernetes cluster.
 
 Run `kubectl create -f </path/to/wavefront-collector-dir>/` to deploy the collector on your cluster.
 
-To verify the collector is deployed, `run kubectl get pods -n wavefront-collector`.
+To verify the collector is deployed, run `kubectl get pods -n wavefront-collector`.
 
 If you do not see metrics in the Kubernetes dashboard, check the logs from the collector and proxy pods.
