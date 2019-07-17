@@ -1,4 +1,4 @@
-# Need to change **YOUR WAVEFRONT URL**, **YOUR WAVEFRONT TOKEN**, and **YOUR JAEGER PORT**.
+# Need to change YOUR WAVEFRONT URL, YOUR WAVEFRONT TOKEN, and YOUR JAEGER PORT.
 
 apiVersion: apps/v1
 # Kubernetes versions after 1.9.0 should use apps/v1
