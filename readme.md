@@ -60,7 +60,7 @@ The Wavefront proxy and a wavefront-proxy service should now be running in Kuber
 ## Step 2: Deploy Kube-State Metrics Service in Kubernetes
 
 ### Deploy the kube-state-metrics Service
-Download kube-state.yaml to your system and `run kubectl create -f kube-state.yaml`.
+Download kube-state.yaml to your system and run `kubectl create -f kube-state.yaml`.
 
 The kube-state-metrics service should now be running on your cluster.
 
