@@ -17,18 +17,20 @@ Download jaeger-wavefront.yaml to your system. Edit the file and set the followi
 ```
 env:
 - name: WAVEFRONT_URL
-    value: <YOUR WAVEFRONT URL>
+    value: <WAVEFRONT URL>
 - name: WAVEFRONT_TOKEN
-    value: <YOUR WAVEFRONT TOKEN>
+    value: <WAVEFRONT TOKEN>
 ```
 
 **Wavefront Jaeger Integrations**
+
+Update the "JAEGER PORT" and "CLUSTER NAME" Environment Variables
 
 ```
 env:
 # Jaeger Tracing Environment Variable
 - name: WAVEFRONT_PROXY_ARGS
-    value: --traceJaegerListenerPorts <YOUR JAEGER PORT>
+    value: "--traceJaegerListenerPorts <JAEGER PORT> --traceJaegerApplicationName <CLUSTER NAME>"
 ```
 
 **Container Port**
@@ -37,7 +39,7 @@ Update the container port with the same port specified in the WAVEFRONT_PROXY_AR
 
 ```
 # Jaeger Tracing Port
-- containerPort: <YOUR JAEGER PORT>
+- containerPort: <JAEGER PORT>
   protocol: TCP
 ```
 
@@ -48,8 +50,8 @@ Update the Service Port with the same Jaeger Port specified in the WAVEFRONT_PRO
 ```
 # Added for Jaeger Tracing
 - name: jaeger
-  port: <YOUR JAEGER PORT>
-  targetPort: <YOUR JAEGER PORT>
+  port: <JAEGER PORT>
+  targetPort: <JAEGER PORT>
   protocol: TCP
 ```
 
